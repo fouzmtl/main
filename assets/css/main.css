@@ -1670,3 +1670,11 @@ input, select, textarea {
     background-color: rgba(0, 0, 0, 0.1); /* Légèrement transparent */
     border-radius: 4px;
 }
+
+/* PERSONNALISATION DU FOND POUR LE RÉPERTOIRE D'ARTICLES */
+body.articles-bg #bg {
+    /* Utilisez le chemin relatif CORRECT pour atteindre l'image */
+    background-image: url('../images/01.jpg'); 
+    /* Vous pourriez aussi ajouter d'autres styles comme: */
+    /* background-position: center center; */
+}
