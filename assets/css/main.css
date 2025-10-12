@@ -1674,10 +1674,11 @@ input, select, textarea {
 /* PERSONNALISATION DU FOND POUR LE RÉPERTOIRE D'ARTICLES */
 body.articles-bg #bg {
     /* Utilisez le chemin relatif CORRECT pour atteindre l'image */
-    background-image: url("../../images/01.jpg"); 
+    background-image: url("../../../images/01.jpg"); 
     /* Vous pourriez aussi ajouter d'autres styles comme: */
     /* background-position: center center; */
 }
+
 
 
 
