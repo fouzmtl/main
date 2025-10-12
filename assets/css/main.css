@@ -1674,11 +1674,38 @@ input, select, textarea {
 /* PERSONNALISATION DU FOND POUR LE RÉPERTOIRE D'ARTICLES */
 body.articles-bg #bg {
     /* Utilisez le chemin relatif CORRECT pour atteindre l'image */
-    background-image: url("../../../images/01.jpg"); 
+    background-image: url("../../images/01.jpg"); 
     /* Vous pourriez aussi ajouter d'autres styles comme: */
     /* background-position: center center; */
 }
 
+/* AJOUTER CECI DANS VOTRE main.css */
+
+#return-button {
+    /* Utilise 'fixed' pour qu'il reste à l'écran lors du défilement */
+    position: fixed; 
+    
+    /* Positionnement : en bas, à droite */
+    bottom: 2em; /* 2em de marge en bas */
+    right: 2em;  /* 2em de marge à droite */
+    
+    /* Assure que le bouton est au-dessus du reste du contenu (wrapper/bg) */
+    z-index: 10; 
+}
+
+/* Ajustement pour les petits écrans (tablettes et mobiles) */
+@media screen and (max-width: 736px) {
+    #return-button {
+        bottom: 1.5em; /* Réduit la marge pour les petits écrans */
+        right: 1.5em;
+    }
+    
+    /* Optionnel : réduire la taille du bouton sur mobile */
+    #return-button .button {
+        font-size: 0.7rem;
+        padding: 0 1rem;
+    }
+}
 
 
 
